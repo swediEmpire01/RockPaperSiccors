@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperSiccors</title>
+    <link rel="stylesheet" href="styleRPS.css">
+    <link rel="shortcut icon" href="min-photo.jpg" type="image/x-icon" id="fvcon">
+    <meta name="description"
+          content="This  a simple Javascript rock paper siccors game that i was inspired to build to test my skills as a learning developer" />
+    
+</head>
+<body>
+    <main>
+        <div class="continer">
+            <h1 id="topHed">ROCK-PAPER-SICCORS</h1>
+            <div id="photo-box">
+                <span class="photo" id="Rock" onclick="rock(checkWinner)"></span>
+                <span class="photo" id="Paper" onclick="paper(checkWinner)"></span>
+                <span class="photo" id="Siccors" onclick="siccors(checkWinner)"></span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>You :</td>
+                        <td id="player">Rock</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Computer :</td>
+                        <td id="computer">Rock</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <div class="contents">
+                <button id="stop" onclick="stopGme()">RESTART</button>
+            </div>
+    
+            <h3 id="Sts">Status</h3>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <td>Your Score:</td>
+                        <td id="playerScore">0</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Computer Score:</td>
+                        <td id="computerScore">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <aside>
+        <div id="drkbck">
+            <div class="container-note" id="child">
+                <h2 id="notice">Rules</h2>
+                    <ul id="rules">
+                        <li>1. Tap on one of the images to play.</li>
+                        <li>2.Who ever reaches 16 points first wins.</li>
+                        <li>3.No cheating allowed, but you can try though &#128514 &#128521 &#128527</li>
+                    </ul>
+                <div class="child" onclick="close()" >
+                    <span onclick="close()">Close</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <script src="function.js"></script> 
+</body>
+</html>
